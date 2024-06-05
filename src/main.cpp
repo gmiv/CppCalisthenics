@@ -7,6 +7,7 @@
 #include "PointersAndReferences.h"
 #include "AdvancedDataTypes.h"
 
+
 #include "ClassesAndObjects.h"
 #include "InheritanceAndPolymorphism.h"
 #include "OperatorOverloading.h"
@@ -18,9 +19,14 @@
 #include "IteratorsAndAlgorithms.h"
 #include "SmartPointersAndMemory.h"
 
+
 #include "TemplatesAndGenerics.h"
 #include "ExceptionHandling.h"
 #include "ConcurrentProgramming.h"
+#include "ByteStreaming.h"
+#include "CustomMemoryAllocators.h"
+#include "DynamicMemoryBasics.h"
+#include "MemoryManagementTechniques.h"
 
 #include "MultithreadingAndConcurrency.h"
 //#include "NetworkProgramming.h"
@@ -51,6 +57,10 @@ extern void runSmartPointersAndMemory();
 extern void runTemplatesAndGenerics();
 extern void runExceptionHandling();
 extern void runConcurrentProgramming();
+extern void runByteStreamingExamples();
+extern void demoNewDelete();
+extern void demoCustomAllocator();
+extern void demoSmartPointers();
 extern void runMultithreadingAndConcurrency();
 extern void runNetworkProgramming();
 extern void runDesignPatterns();
@@ -72,11 +82,11 @@ void runSelectedChapter(int choice) {
             printSpacer();
             runFunctionsAndRecursionExamples();
             printSpacer();
-            runInputAndOutputExamples();
-            printSpacer();
-            runPointersAndReferences();
+            runTemplatesAndGenerics();
             printSpacer();
             runAdvancedDataTypes();
+            runInputAndOutputExamples();
+            printSpacer();
             break;
         case 2:
             runClassesAndObjects();
@@ -102,9 +112,17 @@ void runSelectedChapter(int choice) {
         case 4:
             runTemplatesAndGenerics();
             printSpacer();
-            runExceptionHandling();
+            runByteStreamingExamples();
+            printSpacer();
+            demoNewDelete();
+            printSpacer();
+            demoCustomAllocator();
+            printSpacer();
+            demoSmartPointers();
             printSpacer();
             runConcurrentProgramming();
+            printSpacer();
+            runExceptionHandling();
             printSpacer();
             break;
         case 5:
@@ -121,6 +139,7 @@ void runSelectedChapter(int choice) {
         case 7:
             runModernCppFeatures();
 //            runModernLibrariesFrameworks(argc, argv);
+            break;
         default:
             std::cout << "Invalid choice. Please select a valid chapter number.\n";
     }
