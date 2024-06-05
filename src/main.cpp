@@ -4,10 +4,15 @@
 #include "FlowControl.h"
 #include "FunctionsAndRecursion.h"
 #include "InputAndOutput.h"
+#include "PointersAndReferences.h"
+#include "AdvancedDataTypes.h"
 
 #include "ClassesAndObjects.h"
 #include "InheritanceAndPolymorphism.h"
 #include "OperatorOverloading.h"
+#include "ThreadSupport.h"
+#include "RegexExamples.h"
+#include "AdditionalUtilities.h"
 
 #include "STLContainers.h"
 #include "IteratorsAndAlgorithms.h"
@@ -32,9 +37,14 @@ extern void runVariablesAndTypesExamples();
 extern void runFlowControlExamples();
 extern void runFunctionsAndRecursionExamples();
 extern void runInputAndOutputExamples();
+extern void runPointersAndReferences();
+extern void runAdvancedDataTypes();
 extern void runClassesAndObjects();
 extern void runInheritanceAndPolymorphism();
 extern void runOperatorOverloading();
+extern void runThreadSupport();
+extern void runRegexExamples();
+extern void runAdditionalUtilities();
 extern void runSTLContainers();
 extern void runIteratorsAndAlgorithms();
 extern void runSmartPointersAndMemory();
@@ -64,6 +74,9 @@ void runSelectedChapter(int choice) {
             printSpacer();
             runInputAndOutputExamples();
             printSpacer();
+            runPointersAndReferences();
+            printSpacer();
+            runAdvancedDataTypes();
             break;
         case 2:
             runClassesAndObjects();
@@ -72,6 +85,11 @@ void runSelectedChapter(int choice) {
             printSpacer();
             runOperatorOverloading();
             printSpacer();
+            runThreadSupport();
+            printSpacer();
+            runRegexExamples();
+            printSpacer();
+            runAdditionalUtilities();
             break;
         case 3:
             runSTLContainers();
@@ -116,8 +134,10 @@ int main() {
     std::cout << "1. Chapter 1 - Basic Concepts\n";
     std::cout << "2. Chapter 2 - Object-Oriented Programming\n";
     std::cout << "3. Chapter 3 - Standard Library\n";
-    std::cout << "4. Chapter 7 - Modern C++ Features and Libraries\n";
-    std::cout << "5. Chapter 8 - Building Projects from Scratch\n";
+    std::cout << "4. Chapter 4 - Advanced Topics\n";
+    std::cout << "5. Chapter 5 - Concurrent and Network Programming\n";
+    std::cout << "6. Chapter 6 - Design Patterns and Best Practices\n";
+    std::cout << "7. Chapter 7 - Modern C++ Features and Practices\n";
     std::cout << "Enter your choice: ";
     std::cin >> choice;
     std::cout << "\n";

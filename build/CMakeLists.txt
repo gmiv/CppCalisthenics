@@ -16,7 +16,12 @@ add_executable(CppCalisthenics ../src/main.cpp
         ../include/CodeOptimization.h
         ../include/CompilerOptimizations.h
         ../include/ModernCppFeatures.h
-        ../include/ModernLibrariesFrameworks.h)
+        ../include/ModernLibrariesFrameworks.h
+        ../include/PointersAndReferences.h
+        ../include/AdvancedDataTypes.h
+        ../include/ThreadSupport.h
+        ../include/RegexExamples.h
+        ../include/AdditionalUtilities.h)
 
 # If you have other source files, list them here
 # add_executable(CppCalisthenics src/main.cpp src/OtherFile.cpp)
