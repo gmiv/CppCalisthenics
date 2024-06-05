@@ -1,7 +1,3 @@
-Here's a `README.md` for your C++ project that outlines the project structure, how to build and run the code, and provides general information about the contents of each chapter. This README aims to be both informative and user-friendly, guiding anyone who wishes to understand or use your project.
-
-### README.md
-
 # C++ Calisthenics
 
 ## Project Overview
